@@ -1,7 +1,7 @@
 //import '../styles/globals.css'
 import Head from 'next/head'
 import '../styles/fontawesome-free-5.15.3-web/css/all.min.css'
-import '../public/css/style.css'
+// import '../public/css/style.css' <-- bagian ini sudah tidak diperlukan karena di baris 29 sudah di-embed
 
 function MyApp({ Component, pageProps }) {
   return (
