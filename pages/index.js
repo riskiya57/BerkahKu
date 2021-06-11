@@ -1,16 +1,15 @@
 import Navbar from "../components/navbar"
 import Banner from "../components/banner"
 import Footer from "../components/footer"
-import About from "../components/about";
-import Contact from "../components/contact";
-const Home = (props) => (
-  <div className = "container">
-    <Navbar/>
-    <Banner/>
-    <About/>
-    <Contact/>
-    <Footer/>
-</div>
+const Beranda = () => (
+  <div className="container">
+    <Navbar />
+    <Banner />
+    <br/>
+    <br/>
+    <br/>
+    <Footer />
+  </div>
 )
 
-export default Home;
+export default Beranda;

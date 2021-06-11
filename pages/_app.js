@@ -1,7 +1,6 @@
-//import '../styles/globals.css'
-import Head from 'next/head'
-import '../styles/fontawesome-free-5.15.3-web/css/all.min.css'
-import '../public/css/style.css'
+// import '../styles/globals.css'
+import Head from "next/head"
+import "../styles/fontawesome-free-5.15.3-web/css/all.min.css"
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -10,27 +9,39 @@ function MyApp({ Component, pageProps }) {
   <meta charSet="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
-  <title>Berkah Web</title>
+  <title>BERKAH</title>
   <meta content="" name="description"/>
   <meta content="" name="keywords"/>
 
-  <link href="public/img/favicon.png" rel="icon"/>
-  <link href="public/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link href="img/favicon.png" rel="icon"/>
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon"/>
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"/>
 
-  <link href="public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="public/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
-  <link href="public/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"/>
-  <link href="public/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
-  <link href="public/vendor/remixicon/remixicon.css" rel="stylesheet"/>
-  <link href="public/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet"/>
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
+  <link href="vendor/remixicon/remixicon.css" rel="stylesheet"/>
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
 
-  <link href="public/css/style.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+
+  <div id="preloader"></div>
+  <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></a>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/purecounter/purecounter.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="js/main.js"></script>
 
   </Head>
-    <Component {...pageProps} />
-    </>
+  <Component {...pageProps} />
+  </>
   )
 }
 
