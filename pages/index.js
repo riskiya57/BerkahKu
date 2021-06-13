@@ -1,14 +1,15 @@
-import Navbar from "../components/navbar"
+//import Navbar from "../components/navbar"
 import Banner from "../components/banner"
-import Footer from "../components/footer"
+//import Footer from "../components/footer"
+import MainLayout from "../components/main-layout";
 const Beranda = () => (
   <div className="container">
-    <Navbar />
+    <MainLayout >
     <Banner />
     <br/>
     <br/>
     <br/>
-    <Footer />
+    </MainLayout>
   </div>
 )
 

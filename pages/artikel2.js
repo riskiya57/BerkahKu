@@ -2,7 +2,7 @@
 import MainLayout from "../components/main-layout";
 //import Navbar from "../components/navbar";
 
-const Artikel = (props) => (
+const Artikel2 = (props) => (
   <section id="our-values" className="our-values">
     <div className="container">
       <MainLayout>
@@ -89,4 +89,4 @@ const Artikel = (props) => (
     </div>
   </section>
 )
-export default Artikel;
+export default Artikel2;

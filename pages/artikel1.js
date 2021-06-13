@@ -2,7 +2,7 @@
 import MainLayout from "../components/main-layout";
 //import Navbar from "../components/navbar";
 
-const Artikel = (props) => (
+const Artikel1 = (props) => (
   <section id="our-values" className="our-values">
     <div className="container">
       <MainLayout>
@@ -21,6 +21,7 @@ const Artikel = (props) => (
           </ul>
         </div>
       </section>
+
       <div className="row">
         <div className="col-md-6 d-flex align-items-stretch">
           <div className="card">
@@ -89,4 +90,4 @@ const Artikel = (props) => (
     </div>
   </section>
 )
-export default Artikel;
+export default Artikel1;

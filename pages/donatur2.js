@@ -2,7 +2,7 @@
 import MainLayout from "../components/main-layout";
 //import Navbar from "../components/navbar";
 
-const Donatur = (props) => (
+const Donatur2 = (props) => (
 
   <section id="services" className="services">
     <div className="container">
@@ -10,7 +10,7 @@ const Donatur = (props) => (
 
       <div className="section-title">
         <br />
-        <h2>Donatur</h2>
+        <h2>Donatur2</h2>
         <p>Berkah selalu mendata siapa saja yang menjadi donatur didalamnya karena kegiatan kami tidak akan berjalan tanpa adanya sang donatur. Berikut merupakan list para pendonatur Berkah : </p>
       </div>
       <section id="portfolio" class="portfolio">
@@ -116,4 +116,4 @@ const Donatur = (props) => (
     </div>
   </section>
 )
-export default Donatur;
+export default Donatur2;

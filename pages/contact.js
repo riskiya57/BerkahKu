@@ -1,10 +1,11 @@
-import Footer from "../components/footer";
-import Navbar from "../components/navbar";
+//import Footer from "../components/footer";
+import MainLayout from "../components/main-layout";
+//import Navbar from "../components/navbar";
 
 const Contact = () => (
   <section id="contact" className="contact">
     <div className="container">
-      <Navbar />
+      <MainLayout>
       <br/>
       <div className="section-title">
         <h2>Contact</h2>
@@ -18,19 +19,19 @@ const Contact = () => (
             <div className="address">
               <i className="bi bi-geo-alt"></i>
               <h4>Lokasi:</h4>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>Jl. Jenderal Ahmad Yani No.80, Taman Baru, Kec. Banyuwangi, Kabupaten Banyuwangi, Jawa Timur 68416</p>
             </div>
 
             <div className="email">
               <i className="bi bi-envelope"></i>
               <h4>Email:</h4>
-              <p>info@example.com</p>
+              <p>berkahstartup174@gmail.com</p>
             </div>
 
             <div className="phone">
               <i className="bi bi-phone"></i>
               <h4>Telephon:</h4>
-              <p>+1 5589 55488 55s</p>
+              <p>+62 821 4290 9239</p>
             </div>
 
           </div>
@@ -59,14 +60,14 @@ const Contact = () => (
               <div className="error-message"></div>
               <div className="sent-message">Your message has been sent. Thank you!</div>
             </div>
-            <div className="text-center"><button type="submit">Send Message</button></div>
+            <div className="text-center"><button type="submit">Kirim Pesan</button></div>
           </form>
 
         </div>
 
       </div>
       <br/>
-      <Footer />
+      </MainLayout>
     </div>
   </section>
 )

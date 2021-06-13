@@ -1,10 +1,11 @@
 import Footer from "../components/footer";
+import MainLayout from "../components/main-layout";
 import Navbar from "../components/navbar";
 
 const About = () => (
   <section id="about" className="about">
     <div className="container">
-      <Navbar />
+      <MainLayout>
       <br/>
       <div className="section-title">
         <h2>About Us</h2>
@@ -42,7 +43,7 @@ const About = () => (
         </div>
       </div>
       <br/>
-      <Footer />
+      </MainLayout>
     </div>
   </section>
 )
