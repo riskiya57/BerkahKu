@@ -1,5 +1,6 @@
 //import Footer from "../components/footer";
 import MainLayout from "../components/main-layout";
+import Link from "next/link"
 //import Navbar from "../components/navbar";
 
 const Donaturall = (props) => (
@@ -10,16 +11,32 @@ const Donaturall = (props) => (
 
       <div className="section-title">
         <br />
-        <h2>Donaturall</h2>
+        <h2>Donatur all</h2>
         <p>Berkah selalu mendata siapa saja yang menjadi donatur didalamnya karena kegiatan kami tidak akan berjalan tanpa adanya sang donatur. Berikut merupakan list para pendonatur Berkah : </p>
       </div>
       <section id="portfolio" class="portfolio">
         <div class="container">
           <ul id="portfolio-flters" className="d-flex justify-content-center">
-          <li><a href="/donatur" >1</a></li>
-            <li><a href="/donatur1">2</a></li>
-            <li><a href="/donatur2">3</a></li>
-            <li><a href="/donaturall">All</a></li>
+          <li>
+                <Link href="/donatur">
+                  <a>1</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/donatur1">
+                  <a>2</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/donatur2">
+                  <a>3</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/donaturall">
+                  <a>all</a>
+                </Link>
+              </li>
           </ul>
         </div>
       </section>

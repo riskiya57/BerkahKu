@@ -1,5 +1,6 @@
 //import Footer from "../components/footer";
 import MainLayout from "../components/main-layout";
+import Link from "next/link"
 //import Navbar from "../components/navbar";
 
 const Artikel1 = (props) => (
@@ -8,16 +9,32 @@ const Artikel1 = (props) => (
       <MainLayout>
       <div className="section-title">
         <br />
-        <h2>Portofolio</h2>
+        <h2>Portofolio 2</h2>
         <p>Berkah selalu mendokumentasikan setiap kegiatan yang diadakan, agar bisa menjadi portofolio dan bukti kerja yang real dan akurat serta menyajikan data terbaru. Berikut merupakan kilas balik bukti kegiatan Berkah : </p>
       </div>
       <section id="portfolio" class="portfolio">
         <div class="container">
           <ul id="portfolio-flters" className="d-flex justify-content-center">
-          <li><a href="/artikel" >1</a></li>
-            <li><a href="/artikel1">2</a></li>
-            <li><a href="/artikel2">3</a></li>
-            <li><a href="/artikelall">All</a></li>
+          <li>
+                <Link href="/artikel">
+                  <a>1</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/artikel1">
+                  <a>2</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/artikel2">
+                  <a>3</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/artikelall">
+                  <a>all</a>
+                </Link>
+              </li>
           </ul>
         </div>
       </section>

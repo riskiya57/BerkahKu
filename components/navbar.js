@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Navbar = () => (
   <header id="header" className="d-flex align-items-center fixed-top">
     <div className="container-fluid d-flex align-items-center justify-content-lg-between">
@@ -6,11 +8,29 @@ const Navbar = () => (
 
       <nav id="navbar" className="navbar order-last order-lg-0">
         <ul>
-          <li><a className="nav-link scrollto" href="/">Home</a></li>
-          <li><a className="nav-link scrollto" href="/donatur">Donatur</a></li>
-          <li><a className="nav-link scrollto" href="/artikel">Portofolio</a></li>
-          <li><a className="nav-link scrollto" href="/about">About</a></li>
-          <li><a className="nav-link scrollto" href="/contact">Contact</a></li>
+          <li>
+            <Link href="/">
+              <a className="nav-link scrollto" >Beranda</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/donatur">
+              <a className="nav-link scrollto" >Donatur</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/artikel">
+              <a className="nav-link scrollto" >Portofolio</a>
+            </Link>
+          </li>
+          <li><Link href="/about">
+            <a className="nav-link scrollto" >About</a>
+          </Link>
+          </li>
+          <li><Link href="/contact">
+            <a className="nav-link scrollto" >Contact</a>
+          </Link>
+          </li>
         </ul>
         <i className="bi bi-list mobile-nav-toggle"></i>
       </nav>
