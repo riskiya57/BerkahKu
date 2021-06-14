@@ -41,9 +41,7 @@ const Navbar = () => (
         <a href="#" className="instagram"><i className="bi bi-instagram"></i></a>
         <a href="#" className="youtube"><i className="bi bi-youtube"></i></a>
       </div>
-
     </div>
   </header>
 )
-
 export default Navbar;
