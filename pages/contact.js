@@ -43,10 +43,10 @@ const Contact = () => (
           <form action="forms/contact.php" method="post" role="form" className="php-email-form">
             <div className="row">
               <div className="col-md-6 form-group">
-                <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required="" />
+                <input type="text" name="name" className="form-control" id="name" placeholder="Nama" required="" />
               </div>
               <div className="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" required="" />
+                <input type="email" className="form-control" name="email" id="email" placeholder="Email" required="" />
               </div>
             </div>
             <div className="form-group mt-3">

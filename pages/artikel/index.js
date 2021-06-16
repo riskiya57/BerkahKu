@@ -1,6 +1,7 @@
 //import Footer from "../components/footer";
-import MainLayout from "../components/main-layout";
+import MainLayout from "../../components/main-layout";
 import Link from "next/link"
+import Keterangan from "../../components/keterangan";
 //import Navbar from "../components/navbar";
 
 const Artikel = (props) => (
@@ -12,95 +13,56 @@ const Artikel = (props) => (
           <h2>Portofolio</h2>
           <p>Berkah selalu mendokumentasikan setiap kegiatan yang diadakan, agar bisa menjadi portofolio dan bukti kerja yang real dan akurat serta menyajikan data terbaru. Berikut merupakan kilas balik bukti kegiatan Berkah : </p>
         </div>
-        <section id="portfolio" class="portfolio">
-          <div class="container">
-            <ul id="portfolio-flters" className="d-flex justify-content-center">
-              <li>
-                <Link href="/artikel">
-                  <a>1</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/artikel1">
-                  <a>2</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/artikel2">
-                  <a>3</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/artikelall">
-                  <a>all</a>
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </section>
         <div className="row">
           <div className="col-md-6 d-flex align-items-stretch">
-            <div className="card">
-              <img src="/img/bukti1.jpg" className="card-img" alt="" />
-              <div className="card-body">
-                <h5 className="card-title"><a href="">Pembagian Sembako</a></h5>
-                <p className="card-text"><ul>
-                  <li><i className="ri-check-double-line"></i> Nama penerima :</li>
-                  <li><i className="ri-check-double-line"></i> Alamat :</li>
-                  <li><i className="ri-check-double-line"></i> Tanggal Kegiatan :</li>
-                  <li><i className="ri-check-double-line"></i> Keterangan :</li>
-                </ul>
-                </p>
-              </div>
-            </div>
+            <Keterangan
+              gambar="/img/bukti1.jpg"
+              judul="Pembagian Sembako"
+              namapnrm="Ibu Mis"
+              alamat="jl. xxxxxxx"
+              tanggal="24 Maret 2021"
+              keterangan="Janda Tua"
+            />
           </div>
           <div className="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div className="card">
-              <img src="/img/bukti2.jpg" className="card-img" alt="" />
-              <div className="card-body">
-                <h5 className="card-title"><a href="">Pembagian Sembako</a></h5>
-                <p className="card-text"><ul>
-                  <li><i className="ri-check-double-line"></i> Nama penerima :</li>
-                  <li><i className="ri-check-double-line"></i> Alamat :</li>
-                  <li><i className="ri-check-double-line"></i> Tanggal Kegiatan :</li>
-                  <li><i className="ri-check-double-line"></i> Keterangan :</li>
-                </ul>
-                </p>
-              </div>
-            </div>
-
+            <Keterangan
+              gambar="/img/bukti2.jpg"
+              judul="Pembagian Sembako"
+              namapnrm="Bapak Kholiq"
+              alamat="jl. xxxxxxx"
+              tanggal="24 Maret 2021"
+              keterangan="Kaum Dhuafa"
+            />
           </div>
           <div className="col-md-6 d-flex align-items-stretch mt-4">
-            <div className="card">
-              <img src="/img/bukti6.jpg" className="card-img" alt="" />
-              <div className="card-body">
-                <h5 className="card-title"><a href="">Pembagian Sembako Bersama LazisNU</a></h5>
-                <p className="card-text"><ul>
-                  <li><i className="ri-check-double-line"></i> Nama penerima :</li>
-                  <li><i className="ri-check-double-line"></i> Alamat :</li>
-                  <li><i className="ri-check-double-line"></i> Tanggal Kegiatan :</li>
-                  <li><i className="ri-check-double-line"></i> Keterangan :</li>
-                </ul>
-                </p>
-              </div>
-            </div>
+            <Keterangan
+              gambar="/img/bukti6.jpg"
+              judul="Pembagian Sembako Bersama LazisNu"
+              namapnrm="xxxxxxxxxxxxx"
+              alamat="jl. xxxxxxx"
+              tanggal="24 Maret 2021"
+              keterangan="Janda Tua"
+            />
           </div>
           <div className="col-md-6 d-flex align-items-stretch mt-4">
-            <div className="card">
-              <img src="/img/bukti7.jpg" className="card-img" alt="" />
-              <div className="card-body">
-                <h5 className="card-title"><a href="">Pembagian Sembako Bersama LazisNU</a></h5>
-                <p className="card-text"><ul>
-                  <li><i className="ri-check-double-line"></i> Nama penerima :</li>
-                  <li><i className="ri-check-double-line"></i> Alamat :</li>
-                  <li><i className="ri-check-double-line"></i> Tanggal Kegiatan :</li>
-                  <li><i className="ri-check-double-line"></i> Keterangan :</li>
-                </ul>
-                </p>
-              </div>
-            </div>
+            <Keterangan
+              gambar="/img/bukti7.jpg"
+              judul="Pembagian Sembako Bersama LazisNu"
+              namapnrm="xxxxxxxxxxxxx"
+              alamat="jl. xxxxxxx"
+              tanggal="24 Maret 2021"
+              keterangan="Janda Tua"
+            />
           </div>
         </div>
+        <br />
+        <Link
+          href="/artikel/[kode]/[judul]"
+          as="artikel/1/Kumpulan-Portofolio"
+        >
+          <center><a className="btn btn-primary">Lihat Semua Portofolio</a></center>
+        </Link>
+        <br />
         <br />
       </MainLayout>
     </div>

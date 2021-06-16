@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   white-space: nowrap;
   transition: 0.3s;
-  color: rgb(255, 255, 255);
+  color: rgb(24, 117, 5);
   position: relative;
 }
 
@@ -771,7 +771,7 @@ section {
 }
 
 .services .icon-box:hover .title a {
-  color: #ff7f5d;
+  color: #78ff5d;
 }
 
 .services .description {

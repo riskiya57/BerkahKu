@@ -1,11 +1,10 @@
 import { useRouter } from "next/router";
 import MainLayout from "../../../components/main-layout";
-import Artikelall from "./artikelall";
+import Donaturall from "./donaturall";
 
-
-const DetailPortofolio = () => {
+const DetailDonatur = () => {
     const router = useRouter();
-    const { judul } = router.query;
+    const { nama } = router.query;
 
     return (
         <MainLayout>
@@ -14,15 +13,14 @@ const DetailPortofolio = () => {
             <br/>
             <br/>
             <center>
-            <h1 className="pt-3">Portofolio</h1>
-            <h4 className="display-4">{judul}</h4>
+            <h1 className="pt-3">Donatur</h1>
+            <h4 className="display-4">{nama}</h4>
             {/* <p className="lead">Kode portofolio : {kode}</p> */}
             </center>
-            <Artikelall></Artikelall>
-            
+            <Donaturall></Donaturall>  
         </MainLayout>
     );
 };
 
-export default DetailPortofolio;
+export default DetailDonatur;
 
