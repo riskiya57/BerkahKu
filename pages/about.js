@@ -3,12 +3,13 @@ import MainLayout from "../components/main-layout";
 import Navbar from "../components/navbar";
 
 const About = () => (
+  <MainLayout>
   <section id="about" className="about">
     <div className="container">
-      <MainLayout>
+     
       <br/>
       <div className="section-title">
-        <h2>About Us</h2>
+        <h2>Tentang Kami</h2>
       </div>
 
       <div className="row content">
@@ -43,8 +44,8 @@ const About = () => (
         </div>
       </div>
       <br/>
-      </MainLayout>
     </div>
   </section>
+  </MainLayout>
 )
 export default About;

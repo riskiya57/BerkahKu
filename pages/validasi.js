@@ -3,9 +3,9 @@ import MainLayout from "../components/main-layout";
 //import Navbar from "../components/navbar";
 
 const Validasi = () => (
+    <MainLayout>
     <section id="contact" className="contact">
         <div className="container">
-            <MainLayout>
             <br />
             <div className="section-title">
                 <h2>Silahkan Isi Form Berikut Untuk Melakukan Donasi :</h2>
@@ -59,8 +59,8 @@ const Validasi = () => (
                 </div>
                 <br />
             </center>
-            </MainLayout>
         </div>
     </section>
+    </MainLayout>
 )
 export default Validasi;

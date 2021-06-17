@@ -1,7 +1,7 @@
 //import Footer from "../components/footer";
 // import Link from "next/link"
 //import MainLayout from "../../../components/main-layout";
-import List from "../../../components/list-donatur";
+import List from "../../components/list-donatur";
 //import Navbar from "../components/navbar";
 
 const Donaturall = () => (

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "gambar": "/img/bukti1.jpg",
+        "judul": "Pembagian Sembako",
+        "namapnrm": "Ibu Mis",
+        "alamat": "jl. xxxxxxx",
+        "tanggal": "24 Maret 2021",
+        "keterangan": "Janda Tua"
+    },
+    {
+        "id": 2,
+        "gambar": "/img/bukti2.jpg",
+        "judul": "Pembagian Sembako",
+        "namapnrm": "Bapak Kholiq",
+        "alamat": "jl. xxxxxxx",
+        "tanggal": "24 Maret 2021",
+        "keterangan": "Kaum Dhuafa"
+    },
+    {
+        "id": 3,
+        "gambar": "/img/bukti6.jpg",
+        "judul": "Pembagian Sembako Bersama LazisNu",
+        "namapnrm": "xxxxxxxxxxxxx",
+        "alamat": "jl. xxxxxxx",
+        "tanggal": "24 Maret 2021",
+        "keterangan": "Janda Tua"
+    },
+    {
+        "id": 4,
+        "gambar": "/img/bukti7.jpg",
+        "judul": "Pembagian Sembako Bersama LazisNu",
+        "namapnrm": "xxxxxxxxxxxxx",
+        "alamat": "jl. xxxxxxx",
+        "tanggal": "24 Maret 2021",
+        "keterangan": "Janda Tua"
+    }
+]

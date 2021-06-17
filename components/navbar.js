@@ -24,11 +24,11 @@ const Navbar = () => (
             </Link>
           </li>
           <li><Link href="/about">
-            <a className="nav-link scrollto" >About</a>
+            <a className="nav-link scrollto" >Tentang</a>
           </Link>
           </li>
           <li><Link href="/contact">
-            <a className="nav-link scrollto" >Contact</a>
+            <a className="nav-link scrollto" >Kontak saya</a>
           </Link>
           </li>
         </ul>

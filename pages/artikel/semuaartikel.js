@@ -1,7 +1,7 @@
 //import Footer from "../components/footer";
 // import MainLayout from "../../../components/main-layout";
 // import Link from "next/link"
-import Keterangan from "../../../components/keterangan";
+import Keterangan from "../../components/keterangan";
 //import Navbar from "../components/navbar";
 
 const Artikelall = () => (

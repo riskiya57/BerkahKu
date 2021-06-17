@@ -1,5 +1,6 @@
 import Link from "next/link";
 const Keterangan = (props) => (
+    <div className="col-md-6 d-flex align-items-stretch mt-4">
     <div className="card">
         <img src={props.gambar} className="card-img" alt="" />
         <div className="card-body">
@@ -13,6 +14,7 @@ const Keterangan = (props) => (
 
             </p>
         </div>
+    </div>
     </div>
 );
 export default Keterangan;

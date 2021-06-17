@@ -3,12 +3,12 @@ import MainLayout from "../components/main-layout";
 //import Navbar from "../components/navbar";
 
 const Contact = () => (
+  <MainLayout>
   <section id="contact" className="contact">
     <div className="container">
-      <MainLayout>
       <br/>
       <div className="section-title">
-        <h2>Contact</h2>
+        <h2>Kontak</h2>
         <p>Silahkan Hubungi kami jika ada yang ingin ditanyakan :</p>
       </div>
 
@@ -50,10 +50,10 @@ const Contact = () => (
               </div>
             </div>
             <div className="form-group mt-3">
-              <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject" required="" />
+              <input type="text" className="form-control" name="subject" id="subject" placeholder="Subjek" required="" />
             </div>
             <div className="form-group mt-3">
-              <textarea className="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
+              <textarea className="form-control" name="message" rows="5" placeholder="Pesan" required=""></textarea>
             </div>
             <div className="my-3">
               <div className="loading">Loading</div>
@@ -67,8 +67,8 @@ const Contact = () => (
 
       </div>
       <br/>
-      </MainLayout>
     </div>
   </section>
+  </MainLayout>
 )
 export default Contact;
