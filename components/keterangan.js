@@ -1,4 +1,4 @@
-import Link from "next/link";
+// import Link from "next/link";
 const Keterangan = (props) => (
     <div className="col-md-6 d-flex align-items-stretch mt-4">
     <div className="card">

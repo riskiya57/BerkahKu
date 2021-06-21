@@ -36,8 +36,7 @@ const Donatur = (props) => (
         </div>
         <br />
         <Link
-          href="/donatur/[kode]/[nama]"
-          as="donatur/semua/Kumpulan-Donatur"
+          href="../donatur/semuadonatur"
         >
           <center><a className="btn btn-primary">Lihat Semua Donatur</a></center>
         </Link>

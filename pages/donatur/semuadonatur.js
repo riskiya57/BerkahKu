@@ -1,74 +1,42 @@
 //import Footer from "../components/footer";
+import MainLayout from "../../components/main-layout";
 // import Link from "next/link"
-//import MainLayout from "../../../components/main-layout";
-import List from "../../components/list-donatur";
+import List from "../../components/list-donatur"
+import DataDonatur from "../../datasets/datadonatur.json"
 //import Navbar from "../components/navbar";
 
-const Donaturall = () => (
+export async function getServerSideProps(context) {
+  return {
+    props: { DataDonatur },
+  };
+}
 
-  <section id="services" className="services">
-    <div className="container">
-        {/* <MainLayout> */}
-     <div className="row">
-        <div className="col-lg-4 col-md-6">
-         <List
-          nama  ="Eko Heri Susanto"
-          address ="jl. xxxxxxx"
-          email ="xxxxxx@gmail.com"
-          jumlah ="Rp.50.000;"
-          bergabung ="Tahun 2021"
-         />
+const Donaturall = (props) => (
+  <MainLayout>
+    <section id="services" className="services">
+      <div className="container">
+        <div className="section-title">
+          <br />
+          <br />
+          <br />
+          <h2>Donatur</h2>
+          <p>Berikut Merupakan Daftar Seluruh Donatur Berkah : </p>
         </div>
-        <div className="col-lg-4 col-md-6 mt-4 mt-md-0">
-        <List
-          nama  ="Eko Heri Susanto"
-          address ="jl. xxxxxxx"
-          email ="xxxxxx@gmail.com"
-          jumlah ="Rp.50.000;"
-          bergabung ="Tahun 2021"
-         />
+        <div className="row">
+          {props.DataDonatur.map((donatur) => (
+            <List
+              kode={donatur.kode}
+              nama={donatur.nama}
+              address={donatur.address}
+              email={donatur.email}
+              jumlah={donatur.jumlah}
+              bergabung={donatur.bergabung}
+            />
+          ))}
         </div>
-        <div className="col-lg-4 col-md-6 mt-4 mt-lg-0">
-        <List
-          nama  ="Eko Heri Susanto"
-          address ="jl. xxxxxxx"
-          email ="xxxxxx@gmail.com"
-          jumlah ="Rp.50.000;"
-          bergabung ="Tahun 2021"
-         />
-        </div>
-        <div className="col-lg-4 col-md-6 mt-4">
-        <List
-          nama  ="Eko Heri Susanto"
-          address ="jl. xxxxxxx"
-          email ="xxxxxx@gmail.com"
-          jumlah ="Rp.50.000;"
-          bergabung ="Tahun 2021"
-         />
-        </div>
-
-        <div className="col-lg-4 col-md-6 mt-4">
-        <List
-          nama  ="Eko Heri Susanto"
-          address ="jl. xxxxxxx"
-          email ="xxxxxx@gmail.com"
-          jumlah ="Rp.50.000;"
-          bergabung ="Tahun 2021"
-         />
-        </div>
-        <div className="col-lg-4 col-md-6 mt-4">
-        <List
-          nama  ="Eko Heri Susanto"
-          address ="jl. xxxxxxx"
-          email ="xxxxxx@gmail.com"
-          jumlah ="Rp.50.000;"
-          bergabung ="Tahun 2021"
-         />
-        </div>
+        <br />
       </div>
-      <br />
-      {/* </MainLayout> */}
-    </div>
-  </section>
+    </section>
+  </MainLayout>
 )
 export default Donaturall;
