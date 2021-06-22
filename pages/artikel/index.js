@@ -36,7 +36,7 @@ const Artikel = (props) => (
         </div>
         <br />
         <Link
-          href="../artikel/semuaartikel"
+          href="/artikel/semuaartikel"
         >
           <center><a className="btn btn-primary">Lihat Semua Portofolio</a></center>
         </Link>
